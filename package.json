@@ -1,0 +1,43 @@
+{
+  "name": "solcasteran",
+  "version": "0.0.1",
+  "description": "Sol Casteran WebPage",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "sass  --no-source-map src/sass:public/css",
+    "copy:html": "copyfiles -u 1 ./src/*.html public",
+    "copy": "npm-run-all --parallel copy:*",
+    "watch:html": "onchange 'src/*.html' -- npm run copy:html",
+    "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
+    "watch": "npm-run-all --parallel watch:*",
+    "serve": "browser-sync start --server public --files public",
+    "start": "npm-run-all copy --parallel watch serve",
+    "build": "npm-run-all copy:html build:*",
+    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrunoChiappetta/solcasteran.git"
+  },
+  "keywords": [
+    "Pagina",
+    "Web",
+    "Fotografa"
+  ],
+  "author": "Bruno Chiappetta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrunoChiappetta/solcasteran/issues"
+  },
+  "homepage": "https://github.com/BrunoChiappetta/solcasteran#readme",
+  "dependencies": {
+    "sass": "^1.69.7",
+    "autoprefixer": "^10.4.16",
+    "browser-sync": "^3.0.2",
+    "copyfiles": "^2.4.1",
+    "cssnano": "^6.0.3",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss-cli": "^11.0.0"
+  }
+}
