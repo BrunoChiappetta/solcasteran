@@ -2,7 +2,12 @@
   "name": "solcasteran",
   "version": "0.0.1",
   "description": "Sol Casteran WebPage",
-  "main": "index.js",
+  "main": "src/index.html",
+  "author": "Bruno Chiappetta",
+  "bugs": {
+    "url": "https://github.com/BrunoChiappetta/solcasteran/issues"
+  },
+  "homepage": "https://github.com/BrunoChiappetta/solcasteran#readme",
   "scripts": {
     "build:sass": "sass  --no-source-map src/sass:public/css",
     "copy:html": "copyfiles -u 1 ./src/*.html public",
@@ -24,20 +29,14 @@
     "Web",
     "Fotografa"
   ],
-  "author": "Bruno Chiappetta",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BrunoChiappetta/solcasteran/issues"
-  },
-  "homepage": "https://github.com/BrunoChiappetta/solcasteran#readme",
   "dependencies": {
     "sass": "^1.69.7",
-    "autoprefixer": "^10.4.16",
-    "browser-sync": "^3.0.2",
+    "autoprefixer": "^10.4.2",
+    "browser-sync": "^2.27.7",
     "copyfiles": "^2.4.1",
-    "cssnano": "^6.0.3",
+    "cssnano": "^5.0.17",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.1.0",
-    "postcss-cli": "^11.0.0"
+    "postcss-cli": "^9.1.0"
   }
 }

@@ -1,0 +1,71 @@
+/* ======================= SCROLL ======================= */
+
+::-webkit-scrollbar{
+    width: 15px;
+    overflow-y: hidden;
+    display: none;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--container-color);
+    display: none;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--secondary-color);
+    display: none;
+}
+
+/* ======================= SOCIAL WRAPPER ======================= */
+.floating-button {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50px;
+    z-index: 99;
+    transform: scale(0.8); /* Inicialmente, establece la escala en 0.8 (zoom out) */
+    opacity: 0; /* Inicialmente, establece la opacidad en 0 para ocultar las imágenes */
+    animation: aparecer 1s forwards; /* Agrega la animación con una duración de 0.5 segundos */
+
+    a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 40px;
+    color: #000;
+    text-decoration: none;
+    transform: scale(0.8); /* Inicialmente, establece la escala en 0.8 (zoom out) */
+    opacity: 0; /* Inicialmente, establece la opacidad en 0 para ocultar las imágenes */
+    animation: aparecer 1s forwards; /* Agrega la animación con una duración de 0.5 segundos */
+    i {
+        font-size: 35px;
+        display: block;
+        transform: scale(0.8); /* Inicialmente, establece la escala en 0.8 (zoom out) */
+        opacity: 0; /* Inicialmente, establece la opacidad en 0 para ocultar las imágenes */
+        animation: aparecer 1s forwards; /* Agrega la animación con una duración de 0.5 segundos */
+    }
+    }
+
+    &__icon:hover {
+        color: var(--first-color);
+    }
+    @media (max-width: 1024px) {
+        top: 85%;
+        padding: 1.2rem;
+        border-radius: 100%;
+        box-shadow: 2px 2px 3px #999;
+        
+        a{
+        i{
+            font-size: 50px;
+        }
+        }
+
+        .floating-button__icon:nth-child(2) {
+            /* Estilos que quieres aplicar al segundo <i> dentro de .floating-button__icon */
+            display: none;
+        }
+    }
+}

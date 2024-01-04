@@ -1,0 +1,289 @@
+.contact{
+    margin-top: 1rem;
+
+    &__container-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.8); /* Inicialmente, establece la escala en 0.8 (zoom out) */
+        opacity: 0; /* Inicialmente, establece la opacidad en 0 para ocultar las imágenes */
+        animation: aparecer 1s forwards; /* Agrega la animación con una duración de 0.5 segundos */
+    }
+
+    &__container-content{
+        text-align: center;
+
+        i{
+            font-size: 1.8rem;
+            font-weight: 100;
+            transform: scale(0.8); /* Inicialmente, establece la escala en 0.8 (zoom out) */
+            opacity: 0; /* Inicialmente, establece la opacidad en 0 para ocultar las imágenes */
+            animation: aparecer 1s forwards; /* Agrega la animación con una duración de 0.5 segundos */
+        }
+        li{
+            list-style: none;
+            padding-top: 1.5rem;
+            transform: scale(0.8); /* Inicialmente, establece la escala en 0.8 (zoom out) */
+            opacity: 0; /* Inicialmente, establece la opacidad en 0 para ocultar las imágenes */
+            animation: aparecer 1s forwards; /* Agrega la animación con una duración de 0.5 segundos */
+        }
+        a{
+            color: #4A4A4A;
+        }
+
+    }
+    &__content{
+        font-weight: 300;
+        color: #4A4A4A;
+        font-size: 1.2em;
+        font-family: 'Jost';
+        transform: scale(0.8); /* Inicialmente, establece la escala en 0.8 (zoom out) */
+        opacity: 0; /* Inicialmente, establece la opacidad en 0 para ocultar las imágenes */
+        animation: aparecer 1s forwards; /* Agrega la animación con una duración de 0.5 segundos */
+    }
+
+    &__container-round-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 2rem;
+        transform: scale(0.8); /* Inicialmente, establece la escala en 0.8 (zoom out) */
+        opacity: 0; /* Inicialmente, establece la opacidad en 0 para ocultar las imágenes */
+        animation: aparecer 1s forwards; /* Agrega la animación con una duración de 0.5 segundos */
+    }
+
+    &__container-round-whatsapp{
+        width: 2rem;
+        height: 2rem;
+        padding: 1.2rem;
+        background-color: #539DB3;
+        border-radius: 100%;
+        margin-right: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.8); /* Inicialmente, establece la escala en 0.8 (zoom out) */
+        opacity: 0; /* Inicialmente, establece la opacidad en 0 para ocultar las imágenes */
+        animation: aparecer 1s forwards; /* Agrega la animación con una duración de 0.5 segundos */
+        
+        i{
+            margin-top: 0.2rem;
+            margin-left: 0.05rem;
+            font-size: 1.4rem;
+            text-align: center;
+            color: white;
+        }
+    }
+    &__container-round-instagram{
+        width: 2rem;
+        height: 2rem;
+        padding: 1.2rem;
+        background-color: #B399C2;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.8); /* Inicialmente, establece la escala en 0.8 (zoom out) */
+        opacity: 0; /* Inicialmente, establece la opacidad en 0 para ocultar las imágenes */
+        animation: aparecer 1s forwards; /* Agrega la animación con una duración de 0.5 segundos */
+        
+        i{
+            margin-top: 0.2rem;
+            font-size: 1.4rem;
+            text-align: center;
+            color: white;
+        }
+    }
+}
+
+.contactform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 15rem;
+
+    h2{
+        text-align: center;
+        font-family: var(--h1-font);
+        font-size: 1.8rem;
+        color: #000;
+        font-style: normal;
+        font-weight: 100;
+        line-height: normal;
+        margin-bottom: 1.2rem;
+        transform: scale(0.8); /* Inicialmente, establece la escala en 0.8 (zoom out) */
+        opacity: 0; /* Inicialmente, establece la opacidad en 0 para ocultar las imágenes */
+        animation: aparecer 1s forwards; /* Agrega la animación con una duración de 0.5 segundos */
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+        }
+    }
+    p{
+        font-weight: 300;
+        color: #4A4A4A;
+        font-size: 1rem;
+        font-family: 'Jost';
+        margin-bottom: 1.5rem; 
+        transform: scale(0.8); /* Inicialmente, establece la escala en 0.8 (zoom out) */
+        opacity: 0; /* Inicialmente, establece la opacidad en 0 para ocultar las imágenes */
+        animation: aparecer 1s forwards; /* Agrega la animación con una duración de 0.5 segundos */
+    }
+
+    &__formulario{        
+        @media (min-width: 268px) and (max-width: 920px) {
+            width: 70vw;
+        }
+    }
+
+    &__firstline{
+        display: flex;
+        margin-bottom: 1rem;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        transform: scale(0.8); /* Inicialmente, establece la escala en 0.8 (zoom out) */
+        opacity: 0; /* Inicialmente, establece la opacidad en 0 para ocultar las imágenes */
+        animation: aparecer 1s forwards; /* Agrega la animación con una duración de 0.5 segundos */
+
+        &-name{
+            border: solid 1px #4A4A4A99;
+            padding: 0.8rem;
+            width: 20rem;
+            border-radius: 10rem;
+
+            input{
+                padding-left: 1rem;
+                outline: none;
+                border: none;
+                width: 15rem;
+            }
+        }
+        &-surname{
+            border: solid 1px #4A4A4A99;
+            padding: 0.8rem;
+            width: 20rem;
+            border-radius: 10rem;
+
+            input{
+                padding-left: 1rem;
+                outline: none;
+                border: none;
+                width: 15rem;
+            }
+        }
+    }
+
+    &__secondline{
+        display: flex;
+        margin-bottom: 1rem;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        transform: scale(0.8); /* Inicialmente, establece la escala en 0.8 (zoom out) */
+        opacity: 0; /* Inicialmente, establece la opacidad en 0 para ocultar las imágenes */
+        animation: aparecer 1s forwards; /* Agrega la animación con una duración de 0.5 segundos */
+
+        &-mail{
+            border: solid 1px #4A4A4A99;
+            padding: 0.8rem;
+            width: 20rem;
+            border-radius: 10rem;
+
+            input{
+                padding-left: 1rem;
+                outline: none;
+                border: none;
+                width: 15rem;
+            }
+        }
+
+        &-phonenumber{
+            border: solid 1px #4A4A4A99;
+            padding: 0.8rem;
+            width: 20rem;
+            border-radius: 10rem;
+
+            input{
+                padding-left: 1rem;
+                outline: none;
+                border: none;
+                width: 15rem;
+            }
+        }
+    }
+
+    &__message{
+        display: flex;
+        margin-bottom: 1rem;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        transform: scale(0.8); /* Inicialmente, establece la escala en 0.8 (zoom out) */
+        opacity: 0; /* Inicialmente, establece la opacidad en 0 para ocultar las imágenes */
+        animation: aparecer 1s forwards; /* Agrega la animación con una duración de 0.5 segundos */
+
+        &-line{
+            border: solid 1px #4A4A4A99;
+            padding: 0.8rem;
+            min-width: 9rem;
+            // min-height: 10rem;
+            width: 41rem;
+            border-radius: 10rem;
+            @media (max-width: 768px) {
+                border-radius: 0.8rem;
+                width: 20rem;
+            }
+            
+            textarea{
+                padding-left: 1rem;
+                outline: none;
+                border: none;
+                width: 90%;
+                word-wrap: break-word;
+                // // min-height: 10rem;
+                // max-height: 1rem;
+                height: 1rem;
+                min-height: 1rem;
+                resize: none;
+                // resize: vertical; // Permite el cambio de altura vertical
+                overflow-y: auto; // Agrega una barra de desplazamiento vertical si es necesario
+                
+            }
+        }
+    }
+
+    
+
+    &__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // margin-bottom: 15rem;
+        transform: scale(0.8); /* Inicialmente, establece la escala en 0.8 (zoom out) */
+        opacity: 0; /* Inicialmente, establece la opacidad en 0 para ocultar las imágenes */
+        animation: aparecer 1s forwards; /* Agrega la animación con una duración de 0.5 segundos */
+
+        button{
+            outline: none;
+            border: none;
+            background: #4A4A4A;
+            border: solid 1px #4A4A4A99;
+            padding: 0.8rem;
+            border-radius: 10rem;
+            width: 20rem;
+            margin-bottom: 1rem;
+            color: #fff;
+            font-family: 'Jost';
+        }
+        button:hover{
+            background: #539DB3;
+            border: solid 1px #539DB3;
+        }
+    }
+}

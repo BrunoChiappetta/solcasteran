@@ -1,0 +1,93 @@
+.footer{
+    background: #4A4A4A;
+    width: 100%;
+
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 40;
+    }
+
+    &__semicircle{
+        position: absolute;
+        height: 15rem;
+        width: 15rem;
+        border-radius: 50% 50% 0 0;
+        background-color: #4A4A4A;    
+        z-index: 40;
+    }
+    &__semicircle img{
+        // width: 100%;
+        height: 7rem;
+        margin-top: 2rem;
+    }
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    &__semicircle-logo, &__semicircle-logo2{
+        z-index: 50;
+    }
+    &__semicircle-logo > img{
+        height: 2rem;
+        margin-top: 4rem;
+    }
+    &__semicircle-logo2 > img{
+        margin-top: 0.5rem;
+        height: 1rem;
+        margin-bottom: 1rem;
+
+    }
+
+    &__socials-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__socials{
+        display: flex;
+        list-style: none;
+    }
+    &__socials li {
+        margin: 0.3rem;
+    }
+    &__socials a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    &__socials a i{
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+
+    &__socials a i:hover{
+        color: #B399C2;
+    }
+    &__bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    &__bottom-content{
+        color: white;
+        font-size: 0.7rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    &__bottom_wrapper{
+        padding-bottom: 2rem;
+        background-color: #B399C2;
+        display: flex;
+        justify-content: end;
+    }
+}

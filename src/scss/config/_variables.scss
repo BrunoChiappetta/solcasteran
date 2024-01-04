@@ -1,0 +1,48 @@
+// <!-- ======================= GOOGLE FONTS ======================= -->
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oooh+Baby&display=swap');
+
+// <!-- ======================= VARIABLES CSS ======================= -->
+:root{
+    --header-height: 3rem;
+
+    // <!-- ============ Colors ============ -->
+    --first-color: #B399C2;
+    --secondary-color: #F6F0F9;
+    --ola-color: #539DB3;
+    --container-color: #fff;
+
+    // <!-- ============ Fonts ============ -->
+    --body-font: 'Jost';
+    --biggest-font-size: 2rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --h1-font: 'Oooh Baby';
+
+    // <!-- ============ Responsive Typography ============ -->
+    @media screen and (min-width: 968px) {
+        --biggest-font-size:3rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+    // <!-- ============ Font Weight ============ -->
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    // <!-- ============ Margenes ============ -->
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --m-1-5: 1.5rem;
+    --mb-2: 2rem;
+
+    // <!-- ============ z index ============ -->
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+    $telefono: 480px;
+    $tablet: 768px;
+    $desktop: 1024px;
+}
