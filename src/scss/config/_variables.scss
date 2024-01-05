@@ -11,6 +11,8 @@
     --secondary-color: #F6F0F9;
     --ola-color: #539DB3;
     --container-color: #fff;
+    --black-color: #000;
+    --text-color: #4A4A4A;
 
     // <!-- ============ Fonts ============ -->
     --body-font: 'Jost';
@@ -45,4 +47,10 @@
     $telefono: 480px;
     $tablet: 768px;
     $desktop: 1024px;
+    // <!-- ============ functions ============ -->
+    $estilos-comunes: (
+        transform: scale(0.8),
+        opacity: 0,
+        animation: aparecer 1s forwards
+    );
 }

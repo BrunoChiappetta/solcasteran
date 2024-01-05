@@ -19,7 +19,6 @@
 
     &__content{
         flex-wrap: wrap;
-        
         img{
             width: 50rem;
             max-width: 100%;
@@ -47,8 +46,7 @@
         transform: scale(0.8); /* Inicialmente, establece la escala en 0.8 (zoom out) */
         opacity: 0; /* Inicialmente, establece la opacidad en 0 para ocultar las imágenes */
         animation: aparecer 1s forwards; /* Agrega la animación con una duración de 0.5 segundos */
-
-        background: #F6F0F9;
+        background: var(--secondary-color);
         width: 57rem;
         margin-top: -0.4rem;
 
@@ -61,7 +59,7 @@
             text-align: center;
             font-family: var(--h1-font);
             font-size: 2.5rem;
-            color: #000;
+            color: var(--black-color);
             font-style: normal;
             font-weight: 100;
             line-height: normal;
@@ -78,7 +76,7 @@
             text-align: center;
             font-family: var(--h1-font);
             font-size: 1.8rem;
-            color: #000;
+            color: var(--black-color);
             font-style: normal;
             font-weight: 100;
             line-height: normal;
@@ -92,10 +90,10 @@
         }
         p{
             text-align: center;
-            font-family: 'Jost';
+            font-family: var(--body-font);
             width: 40rem;
             margin-bottom: 1.2rem;
-            color: #4A4A4A;
+            color: var(--text-color);
             font-size: 1.1rem;
             transform: scale(0.8); /* Inicialmente, establece la escala en 0.8 (zoom out) */
             opacity: 0; /* Inicialmente, establece la opacidad en 0 para ocultar las imágenes */
@@ -110,10 +108,10 @@
     &__content-button{
         font-family: var(--body-font);
         padding: 0.3rem 1rem;
-        border: 1px solid #4A4A4A; 
+        border: 1px solid var(--text-color); 
         border-radius: 50px; 
         text-decoration: none;
-        color: #4A4A4A;
+        color: var(--text-color);
         font-size: 1rem;
         background-color: transparent;
         margin-bottom: 1.2rem;
@@ -123,16 +121,16 @@
         animation: aparecer 1s forwards; /* Agrega la animación con una duración de 0.5 segundos */
         a{
             font-style: none;
-            color: #4A4A4A;
+            color: var(--text-color);
         }
         a:hover{
-            color: white;
+            color: var(--container-color);
         }
 
         &:hover {
-            background: #B399C2;
-            border-color: #B399C2; 
-            color: #B399C2; 
+            background: var(--first-color);
+            border-color: var(--first-color); 
+            color: var(--first-color); 
         }
     }
 }
