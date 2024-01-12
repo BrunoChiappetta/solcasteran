@@ -1,0 +1,38 @@
+{
+    "navbar": {
+        "inicio": "Home",
+        "bodas": "Wedding",
+        "portfolio": "Portfolio",
+        "contacto": "Contact"
+    },
+    "about": {
+        "title": "About me",
+        "p": "I'm Sol, welcome to my website!<br>I was born in Tucumán, Argentina, and from a very young age<br> I enjoyed trav<u>eling</u> Life gave me the opportunity</u>to do so. Along the way, I learned about pho<u>tography and</u> fell in love,  discovering a new way to see the worl<u>d, it</u>s colors, landscapes <br> and surprises.  I lived for a while in Seattl<u>e but I </u>had to cross the pond, as we call the ocean in Tucumán. Now</u> I live in #Málag<u>a which, </u>happens to be perfe<u>ct for </u>photography  Living on the Costa del Sol, I enjoy it as much as taking photos... and it's not just because it bears my name!"
+    },
+    "services": {
+        "title": "I focus on capturing<br>your best memories",
+        "serviceslink": "BOOK DATE"
+    },
+    "footer":{
+        "title": "Follow me on Instagram"
+    },
+    "bodas":{
+        "lornap": "This restored farmhouse nestled in an ideal setting between the coast and the mountains of Málaga exudes rustic elegance, capturing the enchanting essence of Andalusia. The wedding of Lorna and Jamie unfolds as the perfect backdrop for an unforgettable celebration. Hailing from Ireland, Lorna and Jamie had the brilliant idea of commemorating their special day in the sunny embrace of Málaga, surrounded by family and friends. It was a wedding filled with emotions and abundant sunshine, just as they had envisioned.",
+        "Amandap": "The Lew Hoad Tennis and Padel Club is nestled in the heart of the Costa del Sol, and it was here that Amanda from Sweden and Rune from Norway chose to celebrate their big day surrounded by their closest family. A wedding brimming with emotions, laughter, and the joy of embarking on a new journey and creating a new story together.",
+        "Liesbethp": "Hoeve Engelendael, an idyllic corner of the Belgian countryside, situated in an oasis of peace and nature, becomes the perfect backdrop to immortalize the wedding of Liesbeth & Roderic. Surrounded by their closest family and friends, they decided to say 'I do.' Emotions frozen in time, ready to be relived again and again.",
+        "Rosap": "In this charming corner of Germany, every wedding is a symphony of tradition, nature, and elegance. From the majesty of the Black Forest to the picturesque landscapes that embrace this land, each image is a visual poem narrating a love story, just like Rosa and Sammy's. The wedding festivities commenced on Friday night with a dinner surrounded by their closest family and friends. Saturday unfolded with the civil ceremony between them, followed by a meal in the midst of the German Black Forest. After a brief pause, the celebration resumed at the hotel, lasting until the early hours of the morning. The festivities concluded on Sunday with a brunch among friends. An unforgettable wedding!",
+        "Katiep": "With its dreamy beaches, cobblestone streets, and Mediterranean charm, this picturesque corner of the Costa del Sol becomes the ideal setting for an intimate and unforgettable wedding, much like Katie and Mikey's. Despite the weather, Katie's smile never faded from her face. We began the celebration at the El Salvador Parish, where this British couple exchanged their vows. As they exited the church, the sun was shining, allowing us to capture some photos at the renowned Balcony of Europe. Later, we headed to Cochran's Terrace - Pub to conclude the day with a very intimate celebration.",
+        "katiet": "Nerja / Spain",
+        "Analup": "In a beautiful village nestled in a privileged landscape of sun and greenery, Analu and Nico celebrated their union surrounded by family and friends. We enjoyed every moment, from the preparations to the final celebration, like children reveling in the joy of it all. A wedding in a place where tradition and happiness blend seamlessly to celebrate love.",
+        "title": "Weddings",
+        "button": "SEE MORE"
+    },
+    "contact":{
+        "title": "Let's talk",
+        "subtitle": "Live the moment, I'll capture it for you!",
+        "p": "Tell me any questions you have.",
+        "button": "Send",
+        "formnombre": "Name"
+        }
+
+}
