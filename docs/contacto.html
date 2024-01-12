@@ -16,7 +16,7 @@
 <meta property=og:image:alt content="Foto de pareja al atardecer tomada por Sol Casteran">
 <meta property=og:url content=https://solcasteran.com>
 <meta itemprop=telephone content="34 644479724">
-<meta property="og:site_name" content="solcasteran.com/contacto">
+<meta property=og:site_name content=solcasteran.com/contacto>
 <link rel=canonical href=https://solcasteran.com/contacto>
 <title>Sol Casteran - Contacto</title>
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css>
@@ -26,24 +26,27 @@
 <body>
 <header class=header id=header>
 <nav class="nav container">
-<a href=index.html class=nav__logo><img src=assets/img/logo/LogoSolCasteran.svg alt=SolCasteranLogo class=img__Logo--small></a>
+<a href=#home class=nav__logo><img src=assets/img/logo/LogoSolCasteran.svg alt=SolCasteranLogo class=img__Logo--small></a>
 <div class=nav__menu id=nav-menu>
 <ul class=nav__list>
 <li class=nav__item>
-<a href=index.html class=nav__link>Inicio</a>
-</li> <li class=nav__item>
-<a href=bodas class=nav__link>Bodas</a>
-</li> <li class=nav__item>
-<a href=portfolio class=nav__link>Portfolio</a>
-</li> <li class=nav__item>
-<a href=contacto class=nav__link>Contacto</a>
+<a href=index.html class=nav__link data-section=navbar data-value=inicio>Inicio</a>
+</li>
+<li class=nav__item>
+<a href=bodas.html class=nav__link data-section=navbar data-value=bodas>Bodas</a>
+</li>
+<li class=nav__item>
+<a href=portfolio.html class=nav__link data-section=navbar data-value=portfolio>Portfolio</a>
+</li>
+<li class=nav__item>
+<a href=contacto.html class=nav__link data-section=navbar data-value=contacto>Contacto</a>
 </li>
 </ul>
 </div>
-<div class="nav__language nav__item--language">
-<a href=# class=nav__language-option>ES <img src="assets/img/flags/image 3.svg" class=nav__language-option_img alt="Flag Spain"></a>
+<div class="nav__language nav__item--language" id=flags>
+<a href=# class=nav__language-option data-language=es>ES <img src="assets/img/flags/image 3.svg" data-language=es class=nav__language-option_img alt="Flag Spain"></a>
 <span class=nav__language-separator>/</span>
-<a href=# class=nav__language-option>EN <img src="assets/img/flags/image 2.svg" class=nav__language-option_img alt="Flag England"></a>
+<a href=# class=nav__language-option data-language=en>EN <img src="assets/img/flags/image 2.svg" data-language=en class=nav__language-option_img alt="Flag England"></a>
 </div>
 <div class=nav__toggle id=nav-toggle>
 <i class="bx bx-menu"></i>
@@ -55,7 +58,7 @@
 <article class=portfolio__container-portfolio>
 <main class=portfolio__content>
 <header class=portfolio__title>
-<h1>¿Hablamos?</h1>
+<h1 data-section=contact data-value=title>¿Hablamos?</h1>
 <img src=assets/img/portfolio/Vector.png alt=Ola>
 </header>
 </main>
@@ -80,8 +83,8 @@
 </div>
 </section>
 <section class="contactform section" id=form>
-<h2>¡Vive el momento, yo lo guardaré para ti!</h2>
-<p>Cuéntame cualquier duda que tengas</p>
+<h2 data-section=contact data-value=subtitle>¡Vive el momento, yo lo guardaré para ti!</h2>
+<p data-section=contact data-value=p>Cuéntame cualquier duda que tengas</p>
 <form class=contactform__formulario id=contactForm action=/enviar-correo method=POST>
 <div class=contactform__firstline>
 <div class=contactform__firstline-name>
@@ -105,7 +108,7 @@
 </div>
 </div>
 <div class=contactform__button>
-<button id=enviarBtn type=submit>Enviar</button>
+<button data-section=contact data-value=button id=enviarBtn type=submit>Enviar</button>
 </div>
 </form>
 </section>
@@ -130,11 +133,12 @@
 </ul>
 </div>
 <div class=footer__bottom>
-<p class=footer__bottom-content>Copyright 2024 &copy; All rights Reserved. Sol Casteran Photography.</p>
+<p class=footer__bottom-content>Copyright 2023 &copy; All rights Reserved. Sol Casteran Photography.</p>
 </div>
 <div class=footer__bottom_wrapper></div>
 </footer>
 <script src=javascript/use-cases/menu.js></script>
 <script src=javascript/use-cases/textarea-height.js></script>
+<script src=javascript/translations/translations.js></script>
 </body>
 </html> 

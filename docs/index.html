@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang=es >
+<html lang=es>
 <head>
 <meta charset=UTF-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
@@ -12,11 +12,11 @@
 <meta property=og:title content="Pagina Web de Sol Casteran 📷">
 <meta property=og:type content="Pagina Web">
 <meta property=og:description content="Fotógrafa especializada en bodas, eventos y productos en Málaga, ofreciendo servicios en toda Europa.">
-<meta property=og:image content="https://solcasteran.com/assets/img/portfolio/HR-Portfolio/portfolio-29.jpg">
+<meta property=og:image content=https://solcasteran.com/assets/img/portfolio/HR-Portfolio/portfolio-29.jpg>
 <meta property=og:image:alt content="Foto de pareja al atardecer tomada por Sol Casteran">
 <meta property=og:url content=https://solcasteran.com>
 <meta itemprop=telephone content="34 644479724">
-<meta property="og:site_name" content="solcasteran.com">
+<meta property=og:site_name content=solcasteran.com>
 <link rel=canonical href=https://solcasteran.com>
 <title>Sol Casteran</title>
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css>
@@ -30,20 +30,23 @@
 <div class=nav__menu id=nav-menu>
 <ul class=nav__list>
 <li class=nav__item>
-<a href=index.html class=nav__link id="inicio">Inicio</a>
-</li> <li class=nav__item>
-<a href=bodas class=nav__link id="bodas">Bodas</a>
-</li> <li class=nav__item>
-<a href=portfolio class=nav__link id="portfolio">Portfolio</a>
-</li> <li class=nav__item>
-<a href=contacto class=nav__link id="contacto">Contacto</a>
+<a href=index.html class=nav__link data-section=navbar data-value=inicio>Inicio</a>
+</li>
+<li class=nav__item>
+<a href=bodas.html class=nav__link data-section=navbar data-value=bodas>Bodas</a>
+</li>
+<li class=nav__item>
+<a href=portfolio.html class=nav__link data-section=navbar data-value=portfolio>Portfolio</a>
+</li>
+<li class=nav__item>
+<a href=contacto.html class=nav__link data-section=navbar data-value=contacto>Contacto</a>
 </li>
 </ul>
 </div>
-<div class="nav__language nav__item--language">
-<a href=# onclick="changeLanguage('es')" class=nav__language-option id="Spanish" class="active">ES <img src="assets/img/flags/image 3.svg" class=nav__language-option_img alt="Flag Spain"></a>
+<div class="nav__language nav__item--language" id=flags>
+<a href=# class=nav__language-option data-language=es>ES <img src="assets/img/flags/image 3.svg" data-language=es class=nav__language-option_img alt="Flag Spain"></a>
 <span class=nav__language-separator>/</span>
-<a href=# onclick="changeLanguage('en')" class=nav__language-option id="English">EN <img src="assets/img/flags/image 2.svg" class=nav__language-option_img alt="Flag England"></a>
+<a href=# class=nav__language-option data-language=en>EN <img src="assets/img/flags/image 2.svg" data-language=en class=nav__language-option_img alt="Flag England"></a>
 </div>
 <div class=nav__toggle id=nav-toggle>
 <i class="bx bx-menu"></i>
@@ -64,11 +67,11 @@
 </section>
 <section class="about section" id=about>
 <div class=about__container>
-<article class="about__content translatable" data-translation-key="aboutTitle">
+<article class=about__content>
 <header class=about__title>
-<h1>Sobre Mi</h1>
+<h1 data-section=about data-value=title>Sobre Mi</h1>
 </header>
-<p class="about__text translatable" data-translation-key="aboutText">Soy Sol, bienvenidos a mi pagina web!<br>
+<p data-section=about data-value=p>Soy Sol, bienvenidos a mi pagina web!<br>
 Nací en Tucumán, Argentina desde muy chica <br> me gustó vi<u>ajar</u> y la vida me dio la op<u>ortunidad de</u> hacerlo. En el camino aprendí de fo<u>tografía y</u> me enamoré, descubrí una nueva forma de ver al mund<u>o, s</u>us colores, sus paisajes <br> y sus sorpresas. Viví durante un tiempo en Seattl<u>e pero </u>tenía que cruzar el charco, como le decimos en Tucumán al océan<u>o, ahora</u> vivo en #Málag<u>a que, </u>resulta ser perfe<u>cto para </u>fotografiar Vivir en la Costa del Sol me gusta tanto como hacer fotos... ¡y no es porque lleve mi nombre!</p>
 </article>
 <figure class=about__image>
@@ -78,7 +81,7 @@ Nací en Tucumán, Argentina desde muy chica <br> me gustó vi<u>ajar</u> y la v
 </section>
 <section class="services section" id=services>
 <header class=services__title>
-<h2>Me enfoco en conseguir<br>tus mejores recuerdos</h2>
+<h2 data-section=services data-value=title>Me enfoco en conseguir<br>tus mejores recuerdos</h2>
 </header>
 <article class=services__container>
 <figure class=services__images>
@@ -88,13 +91,13 @@ Nací en Tucumán, Argentina desde muy chica <br> me gustó vi<u>ajar</u> y la v
 </figure>
 </article>
 <footer class=services__button>
-<a href=contacto class=services__button--round>RESERVAR FECHA</a>
+<a href=contacto.html class=services__button--round data-section=services data-value=serviceslink>RESERVAR FECHA</a>
 </footer>
 </section>
 <section class="socialwrapper section">
 <header class=socialwrapper__content-container>
-<h3 class=socialwrapper__title>
-Sigueme en instagram
+<h3 class=socialwrapper__title data-section=footer data-value=title>
+Sigueme en Instagram
 </h3>
 <div class=socialwrapper__button>
 <a href=https://www.instagram.com/solcasteran/ class=socialwrapper__button--round>@SOLCASTERAN</a>
@@ -144,6 +147,6 @@ Sigueme en instagram
 <div class=footer__bottom_wrapper></div>
 </footer>
 <script src=javascript/use-cases/menu.js></script>
-<script src=javascript/translations/index.js></script>
+<script src=javascript/translations/translations.js></script>
 </body>
 </html>
