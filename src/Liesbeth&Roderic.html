@@ -2,22 +2,21 @@
 <html lang="es">
 <head>
     <!-- ======================= METADATA ======================= -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fotógrafa especializada en bodas, eventos y productos en Málaga, ofreciendo servicios en toda Europa. Transformo momentos especiales en recuerdos duraderos.">
-    <meta name="keywords" content="Fotógrafa de Bodas, Fotografía de Bodas en España, Fotografia en Europa">
-    <meta name="author" content="Sol Casteran">
-    <meta name="robots" content="index, all, follow">
-    <meta name="audience" content="all">
-    <meta name="category" content="Fotografia de bodas">
-
-    <!-- OPEN GRAPH -->
-    <meta property="og:title" content="Boda de Liesbeth y Roderic">
-    <meta property="og:type" content="Gallery">
-    <meta property="og:description" content="Hoeve Engelendael, idílico rincón de la campiña belga, ubicado en un oasis de paz y naturaleza lo hacen perfecto para inmortalizar la boda de Liesbeth & Roderic. Junto a su mas íntima familia y amigos decidieron dar el sí. Emociones congeladas en el tiempo, para revivir una y otra vez.">
-    <meta property="og:image" content="assets/img/bodas/Liesbeth _ Roderic/COMPRESS/Liesbieth-Roderic-15.jpg">
-    <meta property="og:image:alt" content="Foto de la pareja sentados con un bebe">
-
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta name=description content="Fotógrafa especializada en bodas, eventos y productos en Málaga, ofreciendo servicios en toda Europa. Transformo momentos especiales en recuerdos duraderos.">
+    <meta name=keywords content="Fotógrafa de Bodas, Fotografía de Bodas en España, Fotografia en Europa">
+    <meta name=author content="Sol Casteran">
+    <meta name=robots content="index, all, follow">
+    <meta name=audience content=all>
+    <meta name=category content="Fotografia de bodas">
+    <meta property=og:title content="Boda de Liesbeth y Roderic 📷💐">
+    <meta property=og:type content=Gallery>
+    <meta property=og:description content="Hoeve Engelendael, idílico rincón de la campiña belga, ubicado en un oasis de paz y naturaleza lo hacen perfecto para inmortalizar la boda de Liesbeth & Roderic. Junto a su mas íntima familia y amigos decidieron dar el sí. Emociones congeladas en el tiempo, para revivir una y otra vez.">
+    <meta property=og:image content="assets/img/bodas/Liesbeth _ Roderic/COMPRESS/Liesbieth-Roderic-15.jpg">
+    <meta property=og:image:alt content="Foto de la pareja sentados con un bebe">
+    <meta property="og:url" content="https://solcasteran.com/Liesbeth&Roderic">
+    <meta property="og:site_name" content="solcasteran.com/Liesbeth&Roderic">
     <title>Liesbeth & Roderic</title>
     <!-- ITEM PROP -->
     <meta itemprop="telephone" content="34 644479724">
@@ -42,27 +41,33 @@
 </head>
 <body>
     <!-- ======================= HEADER ======================= -->
+    <!-- ======================= HEADER ======================= -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="index.html" class="nav__logo"><img src="assets/img/logo/LogoSolCasteran.svg" alt="SolCasteranLogo" class="img__Logo--small"></a>
+            <a href="#home" class="nav__logo"><img src="assets/img/logo/LogoSolCasteran.svg" alt="SolCasteranLogo" class="img__Logo--small"></a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link">Inicio</a>
-                    </li>                    <li class="nav__item">
-                        <a href="bodas.html" class="nav__link">Bodas</a>
-                    </li>                    <li class="nav__item">
-                        <a href="portfolio.html" class="nav__link">Portfolio</a>
-                    </li>                    <li class="nav__item">
-                        <a href="contacto.html" class="nav__link">Contacto</a>
+                        <a href="index.html" class="nav__link" data-section="navbar" data-value="inicio">Inicio</a>
+                    </li>                    
+                    <li class="nav__item">
+                        <a href="bodas.html" class="nav__link" data-section="navbar" data-value="bodas">Bodas</a>
+                    </li>                    
+                    <li class="nav__item">
+                        <a href="portfolio.html" class="nav__link" data-section="navbar" data-value="portfolio">Portfolio</a>
+                    </li>                    
+                    <li class="nav__item">
+                        <a href="contacto.html" class="nav__link" data-section="navbar" data-value="contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
-            <div class="nav__language nav__item--language">
-                <a href="#" class="nav__language-option">ES <img src="assets/img/flags/image 3.svg" class="nav__language-option_img" alt="Flag Spain"></a>
+                <!-- ======================= LANGUAGUE NAV ======================= -->
+            <div class="nav__language nav__item--language" id="flags">
+                <a href="#" class="nav__language-option" data-language="es">ES <img src="assets/img/flags/image 3.svg" data-language="es" class="nav__language-option_img" alt="Flag Spain"></a>
                 <span class="nav__language-separator">/</span>
-                <a href="#" class="nav__language-option">EN <img src="assets/img/flags/image 2.svg" class="nav__language-option_img" alt="Flag England"></a>
+                <a href="#" class="nav__language-option" data-language="en">EN <img src="assets/img/flags/image 2.svg" data-language="en" class="nav__language-option_img" alt="Flag England"></a>
             </div>
+                <!-- ======================== BURGER MENU ======================= -->
             <div class="nav__toggle" id="nav-toggle">
                 <i class='bx bx-menu'></i>
             </div>
@@ -223,6 +228,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 <script src="javascript/portfolio/gallery.js"></script>
 <script src="javascript/use-cases/menu.js"></script>
+<script src="javascript/translations/translations.js"></script>
 </body>
 </html>
 </body>
